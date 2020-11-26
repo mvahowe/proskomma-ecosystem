@@ -3,18 +3,16 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Proskomma's Documentation!
-=====================================
+Proskomma
+=========
+
+A Processing Model for Scripture-Related Documents
+--------------------------------------------------
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 3
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   big_idea/index
+   user_model/index
+   graph/index
+   under_hood/index
