@@ -8,8 +8,4 @@ The Big Idea
    :maxdepth: 2
 
    challenges
-   multiple_importers
-   abstracted_model
-   efficient_storage
-   multiple_content_types
-   flexible_queries
+   features

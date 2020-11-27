@@ -12,6 +12,7 @@ A Processing Model for Scripture-Related Documents
 .. toctree::
    :maxdepth: 3
 
+   code
    big_idea/index
    user_model/index
    graph/index

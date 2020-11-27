@@ -38,17 +38,15 @@ The semantics of USFM can also be hard to unpick. For example, sometimes a `para
 
 Character-level markup is a similarly mixed bag, including inline `footnotes <https://ubsicap.github.io/usfm/notes_basic/fnotes.html>`_ and `cross-references <https://ubsicap.github.io/usfm/notes_basic/xrefs.html>`_. Inline hypertext in itself is not unusual - it's a feature of many `W3C <https://www.w3.org/>`_ standards. Such features become more challenging in USFM because of Bible BCV (see below).
 
-USFM 2 included introductions, which use tags with different names that are often equivalent to tags used elsewhere. USFM 3 introduced an optional "end introduction" marker (which, in practical terms, is useless since that marker may or may not appear in any particular valid USFM 3 document). Features such as sidebars have been shoehorned into the existing structure, and it seems like every type of peripheral content is now delimited a different way.
-
-In addition, some USFM 3 features look more like Paratext-specific features. See, for example, the `@srcloc word alignment feature <https://ubsicap.github.io/usx/charstyles.html#usx-charstyle-w>`_ which does not support the word alignment of many major Bible translation ecosystems.
+USFM 2 includes introductions, which use tags with different names that are often equivalent to tags used elsewhere. USFM 3 introduced an optional "end introduction" marker (which, in practical terms, is useless since that marker may or may not appear in any particular valid USFM 3 document). Features such as sidebars have been shoehorned into the existing structure, and it seems like every type of peripheral content is now delimited a different way.
 
 Chapter and Verse
 -----------------
 
 Modern translations are structured in terms of semantically meaningful divisions such as sections, paragraphs and sentences. However, the vast majority of Christians and church traditions expect content to be rendered in terms of **Book, Chapter, Verse** (BCV). There are myriad variations on the details of BCV across traditions and languages and, in many cases, those divisions cut across the more modern structure hierarchy. It is therefore decidedly non-trivial to find the text within a BCV range while preserving other features of the translation, all in a format as familiar to younger programmers as data storage on audio cassettes.
 
-Pain and Partial Solutions
-==========================
+Partial Solutions
+=================
 
 USFM obviously gets processed, a lot. But, because of the challenges involved, solutions tend to be partial and fragile. The easy things get done quickly, progress beyond a certain point becomes exponentially harder, and at some point progress stops because the result is "good enough", at least with the limited range of texts that need to be processed. The resulting code is fragile, especially when confronted with texts that use a different subset of USFM features, and at this point the easiest thing is to start writing a different, partial, fragile solution for the new use case.
 
@@ -84,10 +82,10 @@ v3 of USFM includes many extensions. Some of these, such as `chapter and verse m
 
 Unfortunately, the addition of chapter/verse milestones makes USX generation much harder, and makes manual editing of USX almost impossible. This is because chapter/verse information has been denormalized into multiple locations that must be maintained in parallel. None of this helps with "published chapter/verse" markup. In addition, the precise tag order for these milestones is under-defined so, in practice, the way Paratext does it becomes the *de facto* standard.
 
+In addition, some USFM 3 features look more like Paratext-specific features. See, for example, the `@srcloc word alignment feature <https://ubsicap.github.io/usx/charstyles.html#usx-charstyle-w>`_ which does not map onto the word alignment of many major Bible translation ecosystems.
 
-
-The Shape of a Generic Solution
-===============================
+Towards a Generic Solution
+==========================
 
 +---------------------------------------------------------------------------------------------------------------------+
 | **Easy things should be easy, and hard things should be possible.**                                                 |
@@ -96,3 +94,22 @@ The Shape of a Generic Solution
 |                                                                                                                     |
 | Creator of Perl and one-time Bible translation intern                                                               |
 +---------------------------------------------------------------------------------------------------------------------+
+
+It follows from the description above that a number of approaches are not viable:
+
+- USFM is very unlikely to be replaced as a translation format because it is widely used, and because previous attempts to replace it have been expensive failures.
+
+- Attempts to "fix" USFM/USX through extensions may address some specific pain points, but at the cost of making the overall processing model more and more byzantine.
+
+- Simplifying USFM would be very hard because, while almost no-one uses every single feature, every feature is used by someone.
+
+Proskomma assumes that ranking texts will continue to be stored in USFM or USX. It attempts to provide an explicit processing model that
+
+- represents USFM concepts using a small number of consistent building blocks
+
+- addresses some of the semantic pain points
+
+- is flexible enough to handle a range of use cases.
+
+.. note::
+   One consequence of this approach is that USFM is unlikely to be fully roundtripable. It should be possible to export USFM from Proskomma, but that USFM may not be a character-for-character match with the imported USFM.
