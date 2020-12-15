@@ -16,4 +16,5 @@ A Processing Model for Scripture-Related Documents
    big_idea/index
    user_model/index
    graph/index
+   render/index
    under_hood/index
