@@ -1,5 +1,10 @@
 .. _render-index:
 
-#########
-Rendering
-#########
+###################
+The Rendering Model
+###################
+
+.. toctree::
+   :maxdepth: 2
+
+   why

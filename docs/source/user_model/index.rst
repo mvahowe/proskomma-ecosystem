@@ -8,5 +8,3 @@ User Model
    :maxdepth: 2
 
    building_blocks
-   structure
-   processor
