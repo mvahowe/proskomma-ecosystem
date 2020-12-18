@@ -8,11 +8,16 @@ The source code for the `javascript implementation of Proskomma <https://github.
 
 Proskomma is also available as a module on `NPM <https://www.npmjs.com/package/proskomma>`_.
 
+.. image:: projects.svg
+   :alt: Proskomma Projects
+
 Companion projects include
 
 - a `React Component Library for Proskomma <https://github.com/mvahowe/proskomma-react>`_
 
 - an `event-driven rendering model for Proskomma <https://github.com/mvahowe/proskomma-render>`_
+
+- a `Proskomma-aware Electron app <https://github.com/mvahowe/proskomma-desktop>`_
 
 This documentation is generated from `here <https://github.com/mvahowe/proskomma-ecosystem/tree/main/docs>`_.
 
