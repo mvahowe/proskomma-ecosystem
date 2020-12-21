@@ -10,7 +10,7 @@ A Processing Model for Scripture-Related Documents
 --------------------------------------------------
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
 
    code
    big_idea/index

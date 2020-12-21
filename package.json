@@ -1,0 +1,27 @@
+{
+  "name": "proskomma-ecosystem",
+  "version": "0.1.0",
+  "description": "Proskomma Ecosystem Information and Utilities",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "fs-extra": "^9.0.1",
+    "jsonschema": "^1.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mvahowe/proskomma-ecosystem.git"
+  },
+  "author": "Mark Howe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mvahowe/proskomma-ecosystem/issues"
+  },
+  "homepage": "https://github.com/mvahowe/proskomma-ecosystem#readme"
+}
