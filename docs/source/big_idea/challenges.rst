@@ -10,12 +10,12 @@ Why is USFM so popular?
 `USFM <https://ubsicap.github.io/usfm/>`_ and its XML sibling `USX <https://ubsicap.github.io/usx/>`_ have become
 the format of choice for Bible translation. There are several good reasons for this:
 
-- USFM is a standardized dialect of Scripture Formatting Markers (SFM) that have been used by many organizations for decades
+- USFM is a standardized dialect of Standard Formatting Markers (SFM) that have been used by many organizations for decades. (SFM itself was initially used mostly for dictionaries before people starting forcing Scripture into the format, and then the early SFM Bibles were often edited by the Shoebox editor designed for dictionaries, replacing shoeboxes full of dictionary cards).
 - The backslash-based markup, reminiscent of a 1980s word processor, has proved to be easy for Bible translators to use - at least for the most common tasks - including those with limited previous experience with computers
 - A rich technological ecosystem has been created around USFM, including editors such as `Paratext <https://paratext.org/>`_ and data stores such as `the Paratext Registry <https://paratext.org/support/registry/>`_ and `the Digital Bible Library <https://thedigitalbiblelibrary.org>`_
 - USFM is now at the basis of many Bible translation training programs, and almost all Bible translation communities have local experts in this format
 
-In addition, other formats such as `OSIS <http://crosswire.org/osis/>`_ have failed to replace USFM in the past. Given the number of translation projects now using USFM, and the close deadlines of projects such as `Vision 25 <https://www.missionfrontiers.org/issue/article/bible-translation-as-we-approach-2025>`_, it seems likely that USFM will continue to be the translation format of choice for the foreseeable future.
+In addition, other formats such as `OSIS <http://crosswire.org/osis/>`_ have failed to replace USFM in the past. Given the number of translation projects now using USFM, and the close deadlines of projects such as `Vision 2025 <https://www.missionfrontiers.org/issue/article/bible-translation-as-we-approach-2025>`_, it seems likely that USFM will continue to be the translation format of choice for the foreseeable future.
 
 Why is USFM so hard to process?
 ===============================
