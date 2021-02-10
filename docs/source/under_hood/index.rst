@@ -8,4 +8,5 @@ Under the Hood
    :maxdepth: 2
 
    architecture
+   architecture_1_0
    succinct_format

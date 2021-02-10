@@ -1,8 +1,8 @@
 .. _under-hood-architecture:
 
-############
-Architecture
-############
+#################
+Architecture v0.3
+#################
 
 .. image:: architecture.svg
    :alt: Proskomma Block Architecture
