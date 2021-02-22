@@ -4,6 +4,9 @@
 Building Blocks
 ###############
 
+.. image:: ./content_model.svg
+   :alt: Proskomma v1.0 content model
+
 Proskomma query results use nesting elements to represent the structure of a document. Together, these elements constitute the user model,
 but do not map directly on to Proskomma internals. So, eg, there is no object, internally, that directly corresponds to a block.
 
@@ -65,7 +68,8 @@ ItemGroup
 
 An itemGroup is an alternative way to break up the content of a sequence. Instead of dividing up items by block, the items are split on the basis of one or more scopes. The most obvious application is breaking up a text by chapter and verse, but this mechanism can be used with any combination of scopes.
 
-ItemGroups are relatively expensive to generate compared to blocks, but may still be more efficient if, say, subsequent processing requires a lot of direct access by chapter/verse. This feature may be replaced in the future by the ability to import a document and store it natively with the alternative structure.
+.. note::
+   ItemGroups are relatively expensive to generate compared to blocks, but may still be more efficient if, say, subsequent processing requires a lot of direct access by chapter/verse. This feature may be replaced in the future by the ability to import a document and store it natively with the alternative structure.
 
 Item
 ====
@@ -106,6 +110,7 @@ Graft
 -----
 
 Grafts link together sequences to form a tree, with the main sequence at the root. Types of graft include
+
 - headings
 - remarks
 - introductions
