@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
+    <title>cIndex</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
+</head>
+<body class="slds-scrollable--y">
+    <nav class="slds-grid slds-grid--vertical slds-col--rule-right">
+        <header class="slds-p-around--medium slds-col slds-shrik slds-grow-none">
+            <button class="slds-button slds-button--icon slds-float--right js-toggle-navigation less-than-medium">
+                <i class="material-icons">close</i>
+            </button>
+                <h3 class="slds-text-heading--medium"><a href="./">GraphQL Schema</a></h3>
+            <div class="slds-p-top--small">
+                <input id="type-search" type="text" placeholder="Search a type" autofocus="" class="slds-input" />
+            </div>
+        </header>
+        <div id="navication-scroll" class="slds-scrollable--y slds-col slds-grow">
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Schema</h4>
+    <ul>
+        <li  title="Query">
+            <a href="query.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Query
+            </a>
+        </li>
+        <li  title="Mutation">
+            <a href="mutation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Mutation
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Scalars</h4>
+    <ul>
+        <li  title="Boolean">
+            <a href="boolean.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Boolean
+            </a>
+        </li>
+        <li  title="Int">
+            <a href="int.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Int
+            </a>
+        </li>
+        <li  title="String">
+            <a href="string.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                String
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Enums</h4>
+    <ul>
+        <li  title="__DirectiveLocation">
+            <a href="directivelocation.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __DirectiveLocation
+            </a>
+        </li>
+        <li  title="__TypeKind">
+            <a href="typekind.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __TypeKind
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Objects</h4>
+    <ul>
+        <li  title="Block">
+            <a href="block.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Block
+            </a>
+        </li>
+        <li class="slds-is-active" title="cIndex">
+            <a href="cindex.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                cIndex
+            </a>
+        </li>
+        <li  title="cv">
+            <a href="cv.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                cv
+            </a>
+        </li>
+        <li  title="cvIndex">
+            <a href="cvindex.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                cvIndex
+            </a>
+        </li>
+        <li  title="cvNavigation">
+            <a href="cvnavigation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                cvNavigation
+            </a>
+        </li>
+        <li  title="cvVerseElement">
+            <a href="cvverseelement.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                cvVerseElement
+            </a>
+        </li>
+        <li  title="cvVerses">
+            <a href="cvverses.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                cvVerses
+            </a>
+        </li>
+        <li  title="diffRecord">
+            <a href="diffrecord.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                diffRecord
+            </a>
+        </li>
+        <li  title="DocSet">
+            <a href="docset.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DocSet
+            </a>
+        </li>
+        <li  title="Document">
+            <a href="document.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Document
+            </a>
+        </li>
+        <li  title="Item">
+            <a href="item.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Item
+            </a>
+        </li>
+        <li  title="ItemGroup">
+            <a href="itemgroup.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ItemGroup
+            </a>
+        </li>
+        <li  title="KeyValue">
+            <a href="keyvalue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                KeyValue
+            </a>
+        </li>
+        <li  title="orig">
+            <a href="orig.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                orig
+            </a>
+        </li>
+        <li  title="regexIndex">
+            <a href="regexindex.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                regexIndex
+            </a>
+        </li>
+        <li  title="selectorSpec">
+            <a href="selectorspec.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                selectorSpec
+            </a>
+        </li>
+        <li  title="Sequence">
+            <a href="sequence.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Sequence
+            </a>
+        </li>
+        <li  title="verseNumber">
+            <a href="versenumber.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                verseNumber
+            </a>
+        </li>
+        <li  title="verseRange">
+            <a href="verserange.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                verseRange
+            </a>
+        </li>
+        <li  title="__Directive">
+            <a href="directive.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Directive
+            </a>
+        </li>
+        <li  title="__EnumValue">
+            <a href="enumvalue.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __EnumValue
+            </a>
+        </li>
+        <li  title="__Field">
+            <a href="field.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Field
+            </a>
+        </li>
+        <li  title="__InputValue">
+            <a href="inputvalue.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __InputValue
+            </a>
+        </li>
+        <li  title="__Schema">
+            <a href="schema.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Schema
+            </a>
+        </li>
+        <li  title="__Type">
+            <a href="type.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                __Type
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Input Objects</h4>
+    <ul>
+        <li  title="AttSpec">
+            <a href="attspec.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                AttSpec
+            </a>
+        </li>
+        <li  title="InputItemObject">
+            <a href="inputitemobject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InputItemObject
+            </a>
+        </li>
+        <li  title="InputKeyValue">
+            <a href="inputkeyvalue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InputKeyValue
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Directives</h4>
+    <ul>
+        <li  title="deprecated">
+            <a href="deprecated.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                deprecated
+            </a>
+        </li>
+        <li  title="include">
+            <a href="include.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                include
+            </a>
+        </li>
+        <li  title="skip">
+            <a href="skip.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                skip
+            </a>
+        </li>
+        <li  title="specifiedBy">
+            <a href="specifiedby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                specifiedBy
+            </a>
+        </li>
+    </ul>
+</div>
+        </div>
+    </nav>
+    <main><section class="title slds-theme--inverse">
+    <div class="container slds-grid">
+        <div>
+        <button class="slds-button js-toggle-navigation less-than-medium">
+            <i class="material-icons slds-button__icon slds-button__icon--left">menu</i>
+            <span class="slds-text-title--caps">Types<span>
+        </button>
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
+        <h1 class="slds-text-heading--large">cIndex</h1>
+        <div class="slds-text-body--regular"><p>A chapter index entry</p>
+</div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2 id="graphql-schema-definition" class="graphdoc-section__title slds-text-heading--medium slds-m-top--small">
+            <a href="#graphql-schema-definition">
+                <i class="material-icons">link</i>
+            </a>
+            GraphQL Schema definition
+        </h2>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">cIndex</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The chapter number</span></span></li><li><span class="tab"><span class="meta">chapter</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The zero-indexed number of the block where the chapter starts</span></span></li><li><span class="tab"><span class="meta">startBlock</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The zero-indexed number of the block where the chapter ends</span></span></li><li><span class="tab"><span class="meta">endBlock</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The zero-indexed position of the item where the chapter starts</span></span></li><li><span class="tab"><span class="meta">startItem</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The zero-indexed position of the item where the chapter ends</span></span></li><li><span class="tab"><span class="meta">endItem</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The value of nextToken at the beginning of the chapter</span></span></li><li><span class="tab"><span class="meta">nextToken</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   A list of items for this chapter</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>includeContext</strong>: If true, adds scope and nextToken information </span></span></li><li><span class="tab"><span class="comment line">#   to each token</span></span></li><li><span class="tab"><span class="meta">items</span>(<span class="meta">includeContext</span>: <a class="support type" href="boolean.doc.html">Boolean</a>): [<a class="support type" href="item.doc.html">Item</a>]! </span></li><li></li><li><span class="tab"><span class="comment line">#   The items as a string in a compact eyeballable format</span></span></li><li><span class="tab"><span class="meta">dumpItems</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   A list of tokens for this chapter</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>includeContext</strong>: If true, adds scope and nextToken information </span></span></li><li><span class="tab"><span class="comment line">#   to each token</span></span></li><li><span class="tab"><span class="comment line">#   <strong>withChars</strong>: Return tokens whose payload is an exact match to one </span></span></li><li><span class="tab"><span class="comment line">#   of the specified strings</span></span></li><li><span class="tab"><span class="meta">tokens</span>(<span class="meta">includeContext</span>: <a class="support type" href="boolean.doc.html">Boolean</a>, <span class="meta">withChars</span>: [<a class="support type" href="string.doc.html">String</a>!]): [<a class="support type" href="item.doc.html">Item</a>]! </span></li><li></li><li><span class="tab"><span class="comment line">#   The text of the chapter as a single string</span></span></li><li><span class="tab"><span class="meta">text</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li>}</li></ul></code>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2 id="require-by" class="graphdoc-section__title slds-text-heading--medium slds-m-top--small">
+            <a href="#require-by">
+                <i class="material-icons">link</i>
+            </a>
+            Require by
+        </h2>
+        <ul class="require-by"><li><a href="document.doc.html" title="Document - A document, typically corresponding to USFM for one book">Document<em>A document, typically corresponding to USFM for one book</em></a><li></ul>
+    </div>
+</section>
+<footer>
+<div class="container slds-p-around--large">
+    <p class="slds-text-align--right slds-text-title--caps">
+        Generated with <a href="https://github.com/2fd/graphdoc#readme" target="_blank">graphdoc 2.4.0</a>
+    </p>
+</div>
+</footer>
+</main>
+    <script src="./scripts/focus-active.js"></script>
+    <script src="./scripts/filter-types.js"></script>
+    <script src="./scripts/toggle-navigation.js"></script>
+</body>
